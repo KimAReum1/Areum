@@ -8,9 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
     <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/skill.js"></script>
+    <script src="./js/project.js"></script>
+    <script src="./js/proflie.js"></script>
     <style>
         #main h1 {
             @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700&display=swap');
@@ -20,6 +25,7 @@
 
 <body>
     <div id="wrap">
+
         <div id="main">
             <header id="header">
                 <div id="logo"><a href="#">K A R</a></div>
@@ -33,6 +39,15 @@
                 </ul>
             </header>
             <h1>Hello, I'm Kim A Reum</h1>
+            <div class="fixnav">
+                <ul class="fix_mn">
+                    <li><a href="#">main</a></li>
+                    <li><a href="#">proflie</a></li>
+                    <li><a href="#">skill</a></li>
+                    <li><a href="#">project</a></li>
+                    <li><a href="#">finish</a></li>
+                </ul>
+            </div>
         </div>
 
         <section id="introduce">
@@ -78,17 +93,37 @@
                 </li>
 
             </ul>
+            <div class="license">
+                <ul>
+                    <li>보유 자격증</li>
+                    <li>운전면허 2종보통</li>
+                    <li>GCS 바리스타 level 1, 2</li>
+                </ul>
+            </div>
         </section>
 
 
         <section id="project">
             <article id="project_in">
-                <img src="./images/xd.png" alt="">
+                <div class="web_mn">
+                    <img src="./images/web1.jpg" alt="">
+                    <img src="./images/web2.jpg" alt="">
+                    <img src="./images/web3.jpg" alt="">
+                    <img src="./images/web4.jpg" alt="">
+                    <img src="./images/web5.jpg" alt="">
+                </div>
                 <ul>
-                    <li>서브페이지 제작</li>
-                    <li>반응형 작업</li>
-                    <li></li>
-                    <li></li>
+                    <li>'TOWNBOARD' 클론코딩</li>
+                    <li>메인 & 서브페이지 제작</li>
+                    <li>html 기간 : 2주
+                        jquery 기간 : 2주
+                    </li>
+                    <li>사용한 스킬 :</li>
+                    <li>
+                        작업하면서 느꼈던 것 : 먼저는 XD로 이미지 작업하는 것도 어려웠지만
+                        클론코딩하면서
+                    </li>
+                    <li>페이지 링크 or 코드보기</li>
                 </ul>
             </article>
         </section>
@@ -97,6 +132,62 @@
 
 
         <footer id="footer">
+
+            <div>
+                <form id="form">
+                    <div class="field">
+                        <label for="from_name">from_name</label>
+                        <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div class="field">
+                        <label for="to_name">to_name</label>
+                        <input type="text" name="to_name" id="to_name">
+                    </div>
+                    <div class="field">
+                        <label for="message">message</label>
+                        <input type="text" name="message" id="message">
+                    </div>
+                    <div class="field">
+                        <label for="tel">tel</label>
+                        <input type="text" name="tel" id="tel">
+                    </div>
+                    <div class="field">
+                        <label for="reply_to">reply_to</label>
+                        <input type="text" name="reply_to" id="reply_to">
+                    </div>
+
+                    <input type="submit" id="button" value="Send Email">
+                </form>
+
+                <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+                <script type="text/javascript">
+                    emailjs.init('8tqNwSwgnmmVDbAnz')
+
+                    const btn = document.getElementById('button');
+
+                    document.getElementById('form')
+                        .addEventListener('submit', function (event) {
+                            event.preventDefault();
+
+                            btn.value = 'Sending...';
+
+                            const serviceID = 'service_xmnqf97';
+                            const templateID = 'template_d7vvp1r';
+
+                            emailjs.sendForm(serviceID, templateID, this)
+                                .then(() => {
+                                    btn.value = 'Send Email';
+                                    alert('메일보내기 성공');
+                                }, (err) => {
+                                    btn.value = 'Send Email';
+                                    alert(JSON.stringify(err));
+                                });
+                        });
+                </script>
+
+            </div>
             <h2>Thank You</h2>
         </footer>
     </div>

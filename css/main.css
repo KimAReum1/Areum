@@ -5,8 +5,8 @@
             rgb(194, 197, 243)80%);
 }
 
-#main {
 
+#main {
     width: 100%;
     height: 800px;
 }
@@ -28,20 +28,27 @@
 #header #nav {
     float: right;
     line-height: 100px;
-    width: 600px;
+    width: 650px;
     height: 50px;
 }
 
 #header #nav li {
     float: left;
     text-align: center;
-    width: 100px;
+    width: 20%;
     height: 50px;
 }
 
 #header #nav li a {
     line-height: 50px;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+#header #nav li a:hover {
+    font-size: 23px;
+    color: #000;
+    text-decoration: underline;
+    transition: all 0.5s;
 }
 
 #main h1 {
@@ -50,10 +57,37 @@
     font-size: 50px;
     color: rgb(45, 67, 51);
     opacity: 0;
-
+    font-family: 'Fragment Mono', monospace;
 }
 
+.fixnav {
+    position: fixed;
+    top: 400px;
+    right: 30px;
+}
 
+.fix_mn {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 120px;
+    height: 150px;
+}
+
+.fix_mn li {}
+
+.fix_mn a {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fix_mn a:hover {
+    cursor: pointer;
+    color: #000;
+    font-weight: 800;
+}
 
 
 
@@ -80,8 +114,8 @@
 
 #introduce .box1 {
     float: left;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 350px;
     background-color: rgba(72, 255, 0, 0.08);
     opacity: 0;
     position: absolute;
@@ -96,6 +130,7 @@
     color: #000;
     font-size: 22px;
     line-height: 50px;
+    font-family: 'Poor Story', cursive;
 }
 
 #introduce .box2 {
@@ -194,9 +229,36 @@
 
 #skill .skill_list li h5 {
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
 }
 
+.license {
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.license ul {
+    width: 100%;
+}
+
+.license li {
+    list-style: circle;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888;
+    font-family: 'Poor Story', cursive;
+}
+
+.license li:nth-child(1) {
+    list-style: none;
+    border-bottom: none;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000;
+    font-size: 25px;
+}
 
 
 
@@ -206,7 +268,7 @@
 
 #project {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 800px;
@@ -214,23 +276,38 @@
 
 #project_in {
     display: flex;
-    justify-content: space-between;
-    width: 1050px;
+    justify-content: center;
+    width: 100%;
+}
+
+#project_in .web_mn {
+    position: relative;
+    width: 900px;
+    height: 500px;
+
 }
 
 #project_in img {
-    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900px;
     height: 500px;
 }
 
 #project_in ul {
+    margin-left: 50px;
     width: 500px;
     height: 500px;
-    background-color: rgba(127, 255, 212, 0.281);
+    background-color: rgba(214, 127, 255, 0.281);
+    border-radius: 20px;
 }
 
 #project_in li {
+    padding: 10px;
     font-size: 20px;
+    font-family: 'Poor Story', cursive;
+    line-height: 30px;
 }
 
 
@@ -245,12 +322,49 @@
 
 
 #footer {
+    position: relative;
     width: 100%;
     height: 800px;
 }
 
+#form {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+}
+
 #footer h2 {
+    position: absolute;
+    top: 350px;
+    right: 800px;
     text-align: center;
-    line-height: 800px;
     font-size: 50px;
 }
