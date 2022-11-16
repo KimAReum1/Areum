@@ -3,6 +3,15 @@
     background: -webkit-linear-gradient(-45deg,
             rgb(194, 243, 208)20%, rgb(255, 234, 253)40%,
             rgb(194, 197, 243)80%);
+    background: -ms-linear-gradient(-45deg,
+            rgb(194, 243, 208)20%, rgb(255, 234, 253)40%,
+            rgb(194, 197, 243)80%);
+    background: -moz-linear-gradient(-45deg,
+            rgb(194, 243, 208)20%, rgb(255, 234, 253)40%,
+            rgb(194, 197, 243)80%);
+    background: -o-linear-gradient(-45deg,
+            rgb(194, 243, 208)20%, rgb(255, 234, 253)40%,
+            rgb(194, 197, 243)80%);
 }
 
 
@@ -94,7 +103,7 @@
 
 
 
-
+/* ---------------------------소개영역--------------------------- */
 #introduce {
     padding-top: 150px;
     box-sizing: border-box;
@@ -116,14 +125,14 @@
     float: left;
     width: 450px;
     height: 350px;
-    background-color: rgba(72, 255, 0, 0.08);
+    background-color: rgb(255, 255, 255);
     opacity: 0;
     position: absolute;
     top: 50px;
     left: 50px;
     padding: 20px;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 #introduce .box1 p {
@@ -135,22 +144,24 @@
 
 #introduce .box2 {
     float: right;
-    width: 500px;
-    height: 500px;
+    width: 620px;
     /* background-color: rgb(165, 146, 33); */
     opacity: 0;
     position: absolute;
-    top: 50px;
+    top: 15px;
     left: 1400px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 5px;
+    outline: 1px solid rgba(255, 255, 255, 0.658);
+    outline-offset: -10px;
+    overflow: hidden;
+
 }
 
 #introduce .box2 img {
-    width: 231px;
-    height: 500px;
+    display: block;
+    width: 100%;
+    height: auto;
+
 }
 
 
@@ -158,14 +169,25 @@
 
 
 
-
+/* ---------------------------스킬영역--------------------------- */
 
 #skill {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 800px;
+}
+
+#skill .box {
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
 #skill .skill_list {
@@ -265,6 +287,7 @@
 
 
 
+/* -----------------------프로젝트영역--------------------------- */
 
 #project {
     display: flex;
@@ -278,12 +301,15 @@
     display: flex;
     justify-content: center;
     width: 100%;
+
 }
 
 #project_in .web_mn {
     position: relative;
-    width: 900px;
+    width: 1000px;
     height: 500px;
+    border-radius: 5px;
+    overflow: hidden;
 
 }
 
@@ -291,25 +317,58 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 900px;
+    width: 1000px;
     height: 500px;
 }
+
+#project_in img:nth-child(1) {
+    z-index: 5;
+}
+
+#project_in img:nth-child(2) {
+    z-index: 4;
+}
+
+#project_in img:nth-child(3) {
+    z-index: 3;
+}
+
+#project_in img:nth-child(4) {
+    z-index: 2;
+}
+
+#project_in img:nth-child(5) {
+    z-index: 1;
+}
+
 
 #project_in ul {
     margin-left: 50px;
     width: 500px;
     height: 500px;
-    background-color: rgba(214, 127, 255, 0.281);
-    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 5px;
+    outline: 1px dotted #ccc;
+    outline-offset: -10px;
 }
 
 #project_in li {
-    padding: 10px;
+    padding: 15px;
     font-size: 20px;
     font-family: 'Poor Story', cursive;
     line-height: 30px;
 }
 
+#project_in li:nth-child(1) {
+    text-align: center;
+}
+
+#project_in li span {
+
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poor Story', cursive;
+}
 
 
 
@@ -320,20 +379,29 @@
 
 
 
+
+/* ---------------------------하단영역--------------------------- */
 
 #footer {
-    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
     width: 100%;
     height: 800px;
 }
 
-#form {
-    position: absolute;
-    top: 300px;
-    left: 100px;
+#footer_in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    width: 250px;
+    width: 100%;
+    height: 700px;
+    border-bottom: 1px solid rgb(163, 161, 161);
+
 }
+
+#form {}
 
 .field {
     margin-bottom: 10px;
@@ -362,9 +430,27 @@ input[type="submit"] {
 }
 
 #footer h2 {
-    position: absolute;
-    top: 350px;
-    right: 800px;
+    margin-left: 100px;
+    margin-top: 210px;
     text-align: center;
     font-size: 50px;
+}
+
+#footer .bottom {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1000px;
+    height: 50px;
+}
+
+
+#footer .bottom .logo {
+    font-size: 30px;
+    float: left;
+    font-weight: 900;
+}
+
+#footer .bottom .link {
+    font-size: 18px;
+    float: right;
 }
