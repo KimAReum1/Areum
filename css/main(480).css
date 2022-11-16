@@ -62,7 +62,8 @@
         font-family: 'Fragment Mono', monospace;
     }
 
-    .fix_nav {
+    .fixnav {
+        display: none;
         position: fixed;
         top: 400px;
         right: 30px;
@@ -101,62 +102,175 @@
     /* ---------------------------소개영역--------------------------- */
 
     #introduce {
-        width: 100%;
-        height: 800px;
-
-
+        display: none;
     }
 
-    #introduce .box {
+    #introduce_m {
+        display: block;
+        width: 100%;
+    }
+
+    #introduce_m .box_m {
         margin: 0 auto;
-        width: 100%;
-        height: 800px;
-        /* 500px */
-        /* position: relative; */
+        width: 300px;
 
     }
 
-    #introduce .box1 {
 
+    #introduce_m .box1_m {
         width: 100%;
-        height: 350px;
-        background-color: rgba(72, 255, 0, 0.08);
-        opacity: 1;
-        /* position: absolute;
-        top: 50px;
-        left: 50px; */
+        height: 100px;
+        background-color: #fff;
         padding: 20px;
         box-sizing: border-box;
-        border-radius: 20px;
+        border-radius: 5px;
     }
 
-    #introduce .box1 p {
-        color: #000;
-        font-size: 22px;
-        line-height: 50px;
+    #introduce_m .box1_m p {
+        font-size: 0.3vw;
+        font-family: 'Poor Story', cursive;
+        /* 22px */
+    }
+
+    #introduce_m .box2_m {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 5px;
+        outline: 1px solid rgba(255, 255, 255, 0.658);
+        outline-offset: -10px;
+        overflow: hidden;
+
+    }
+
+    #introduce_m .box2_m img {
+        width: 100%;
+        display: block;
+    }
+
+
+
+
+
+
+
+    /* -------------------------스킬영역------------------------------ */
+    #skill {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        /* height: 800px; */
+    }
+
+    #skill .box {
+
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        /* 900px */
+        height: 300px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+    }
+
+    #skill .skill_list {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        /* 300px */
+        height: 100px;
+        /* 320px */
+    }
+
+    #skill .skill_list li {
+
+        width: 16px;
+        /* 50px */
+        height: 100px;
+        /* 320px */
+
+    }
+
+    #skill .skill_list li>div {
+        position: relative;
+        width: 16px;
+        /* 50px */
+        height: 100px;
+        /* 300px */
+        border: 2px solid #000;
+        overflow: hidden;
+    }
+
+    #skill .skill_list li .in_box {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        font-size: 3.3vw;
+        /* 16px */
+        text-align: center;
+        opacity: 0;
+    }
+
+    #skill .skill_list li .in_box01 {
+        width: 50px;
+        height: 240px;
+        background-color: rgb(178, 130, 223);
+
+    }
+
+    #skill .skill_list li .in_box02 {
+        width: 50px;
+        height: 210px;
+        background-color: rgb(178, 130, 223);
+    }
+
+
+    #skill .skill_list li .in_box03 {
+        width: 50px;
+        height: 90px;
+        background-color: rgb(178, 130, 223);
+
+    }
+
+    #skill .skill_list li .in_box04 {
+        width: 50px;
+        height: 120px;
+        background-color: rgb(178, 130, 223);
+
+    }
+
+    #skill .skill_list li h5 {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .license {
+        margin-left: 100px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .license ul {
+        width: 100%;
+    }
+
+    .license li {
+        list-style: circle;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #888;
         font-family: 'Poor Story', cursive;
     }
 
-    #introduce .box2 {
-
-        width: 100%;
-        height: 350px;
-        /* background-color: rgb(165, 146, 33); */
-        opacity: 1;
-        /* position: absolute;
-        top: 50px;
-        left: 1400px; */
-        border-radius: 20px;
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
+    .license li:nth-child(1) {
+        list-style: none;
+        border-bottom: none;
+        text-align: center;
+        margin-bottom: 50px;
+        color: #000;
+        font-size: 25px;
     }
-
-    #introduce .box2 img {
-        width: 231px;
-        height: 500px;
-    }
-
-
 
 }

@@ -165,6 +165,15 @@
 }
 
 
+/* -----------------------모바일 영역---------------------- */
+#introduce_m {
+    display: none;
+}
+
+
+
+
+
 
 
 
@@ -401,7 +410,14 @@
 
 }
 
-#form {}
+#form {
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.842);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
 
 .field {
     margin-bottom: 10px;
@@ -430,10 +446,11 @@ input[type="submit"] {
 }
 
 #footer h2 {
-    margin-left: 100px;
+    margin-left: 200px;
     margin-top: 210px;
     text-align: center;
     font-size: 50px;
+    text-shadow: 5px 5px rgba(114, 112, 112, 0.274);
 }
 
 #footer .bottom {
