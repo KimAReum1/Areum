@@ -56,7 +56,8 @@
         margin: 0 auto;
         margin-top: 100px;
         text-align: center;
-        font-size: 30px;
+        font-size: 5vw;
+        /* 50px */
         color: rgb(45, 67, 51);
         opacity: 0;
         font-family: 'Fragment Mono', monospace;
@@ -99,7 +100,7 @@
 
 
 
-    /* ---------------------------소개영역--------------------------- */
+    /* ----------------------소개 모바일 영역--------------------------- */
 
     #introduce {
         display: none;
@@ -121,13 +122,13 @@
         width: 100%;
         height: 100px;
         background-color: #fff;
-        padding: 20px;
+        padding: 10px;
         box-sizing: border-box;
         border-radius: 5px;
     }
 
     #introduce_m .box1_m p {
-        font-size: 0.3vw;
+        font-size: 3vw;
         font-family: 'Poor Story', cursive;
         /* 22px */
     }
@@ -154,36 +155,42 @@
 
 
     /* -------------------------스킬영역------------------------------ */
+
     #skill {
+        display: none;
+    }
+
+    #skill_m {
         display: flex;
         align-items: center;
         width: 100%;
+        height: 600px;
         /* height: 800px; */
     }
 
-    #skill .box {
+    #skill_m .box {
 
         margin: 0 auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         width: 300px;
         /* 900px */
-        height: 300px;
+        height: 200px;
         border: 2px solid #fff;
         border-radius: 5px;
     }
 
-    #skill .skill_list {
+    #skill_m .skill_list {
         display: flex;
         justify-content: space-between;
-        width: 30%;
+        width: 100px;
         /* 300px */
         height: 100px;
         /* 320px */
     }
 
-    #skill .skill_list li {
+    #skill_m .skill_list li {
 
         width: 16px;
         /* 50px */
@@ -192,7 +199,7 @@
 
     }
 
-    #skill .skill_list li>div {
+    #skill_m .skill_list li>div {
         position: relative;
         width: 16px;
         /* 50px */
@@ -202,75 +209,86 @@
         overflow: hidden;
     }
 
-    #skill .skill_list li .in_box {
+    #skill_m .skill_list li .in_box {
         position: absolute;
         bottom: 0px;
         left: 0;
-        font-size: 3.3vw;
+        font-size: 0.2vw;
         /* 16px */
         text-align: center;
-        opacity: 0;
+        opacity: 1;
     }
 
-    #skill .skill_list li .in_box01 {
+    #skill_m .skill_list li .in_box01 {
         width: 50px;
-        height: 240px;
+        height: 80px;
+        /* 240px */
         background-color: rgb(178, 130, 223);
 
     }
 
-    #skill .skill_list li .in_box02 {
+    #skill_m .skill_list li .in_box02 {
         width: 50px;
-        height: 210px;
+        height: 70px;
+        /* 210px */
         background-color: rgb(178, 130, 223);
     }
 
 
-    #skill .skill_list li .in_box03 {
+    #skill_m .skill_list li .in_box03 {
         width: 50px;
-        height: 90px;
+        height: 30px;
+        /* 90px */
         background-color: rgb(178, 130, 223);
 
     }
 
-    #skill .skill_list li .in_box04 {
+    #skill_m .skill_list li .in_box04 {
         width: 50px;
-        height: 120px;
+        height: 40px;
+        /* 120px */
         background-color: rgb(178, 130, 223);
 
     }
 
-    #skill .skill_list li h5 {
+    #skill_m .skill_list li h5 {
         text-align: center;
-        font-size: 14px;
+        font-size: 0.1vw;
+        /* 14px */
     }
 
-    .license {
-        margin-left: 100px;
-        width: 200px;
-        height: 200px;
+    .license_m {
+        margin-left: 30px;
+        /* 100px */
+        width: 100px;
+        /* 200px */
+        height: 100px;
+        /* 200px */
     }
 
-    .license ul {
+    .license_m ul {
         width: 100%;
     }
 
-    .license li {
+    .license_m li {
         list-style: circle;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 0.2vw;
+        /* 20px */
         margin-bottom: 20px;
         border-bottom: 1px solid #888;
         font-family: 'Poor Story', cursive;
     }
 
-    .license li:nth-child(1) {
+    .license_m li:nth-child(1) {
         list-style: none;
         border-bottom: none;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        /* 50px */
         color: #000;
-        font-size: 25px;
+        font-size: 0.25vw;
+        /* 25px */
     }
 
 }

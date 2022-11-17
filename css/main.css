@@ -137,7 +137,7 @@
 
 #introduce .box1 p {
     color: #000;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 50px;
     font-family: 'Poor Story', cursive;
 }
@@ -170,6 +170,10 @@
     display: none;
 }
 
+
+#skill_m {
+    display: none;
+}
 
 
 
