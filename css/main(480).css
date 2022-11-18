@@ -7,6 +7,7 @@
     }
 
     #header {
+
         width: 100%;
         height: 100px;
 
@@ -93,8 +94,36 @@
         font-weight: 800;
     }
 
+    /* -----------------모바일 고정 네비--------------- */
+    .m_fixnav {
+        display: block;
+        position: fixed;
+        top: 300px;
+        right: 10px;
+    }
 
+    .m_fix_mn {
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        width: 60px;
+        height: 80px;
+    }
 
+    .m_fix_mn li {}
+
+    .m_fix_mn a {
+        display: block;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .m_fix_mn a:hover {
+        cursor: pointer;
+        color: #000;
+        font-weight: 800;
+    }
 
 
 
@@ -111,7 +140,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        height: 600px;
+        height: 500px;
     }
 
     #introduce_m .box_m {
@@ -167,12 +196,11 @@
         display: flex;
         align-items: center;
         width: 100%;
-        height: 600px;
+        height: 500px;
         /* height: 800px; */
     }
 
     #skill_m .box {
-
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
@@ -224,6 +252,7 @@
 
 
     #skill_m .skill_list li .in_box span {
+        display: none;
         position: absolute;
         left: 0px;
         font-size: 10px;
@@ -330,7 +359,7 @@
         justify-content: space-around;
         align-items: center; */
         width: 100%;
-        height: 700px;
+        height: 600px;
 
     }
 
@@ -344,9 +373,9 @@
 
     #project_in .web_mn {
         position: relative;
-        width: 400px;
+        width: 300px;
         /* 1000px */
-        height: 200px;
+        height: 150px;
         /* 500px */
         border-radius: 5px;
         overflow: hidden;
@@ -358,9 +387,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 400px;
+        width: 300px;
         /* 1000px */
-        height: 200px;
+        height: 150px;
         /* 500px */
     }
 
@@ -388,7 +417,7 @@
     #project_in ul {
         margin-left: 0px;
         /* 50px */
-        width: 400px;
+        width: 300px;
         /* 500px */
         height: 150px;
         /* 500px */
@@ -406,7 +435,7 @@
         font-size: 10px;
         /* 20px */
         font-family: 'Poor Story', cursive;
-        line-height: 15px;
+        line-height: 13px;
         /* 30px */
     }
 
