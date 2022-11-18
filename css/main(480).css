@@ -318,7 +318,7 @@
     .license_m {
         margin-left: 30px;
         /* 100px */
-        width: 100px;
+        width: 110px;
         /* 200px */
         height: 100px;
         /* 200px */
@@ -345,7 +345,7 @@
         margin-bottom: 30px;
         /* 50px */
         color: #000;
-        font-size: 0.25vw;
+        font-size: 12px;
         /* 25px */
     }
 
