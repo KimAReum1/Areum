@@ -99,7 +99,7 @@
     .m_fixnav {
         display: block;
         position: fixed;
-        top: 300px;
+        top: 20px;
         right: 10px;
     }
 
@@ -107,10 +107,13 @@
         border: 1px solid rgb(255, 255, 255);
         border-radius: 10px;
         width: 60px;
-        height: 80px;
+        height: 85px;
     }
 
-    .m_fix_mn li {}
+    .m_fix_mn li {
+        width: 100%;
+        height: 20%;
+    }
 
     .m_fix_mn a {
         display: block;
@@ -296,7 +299,7 @@
 
     #skill_m .skill_list li h5 {
         /* text-align: center; */
-        font-size: 0.1vw;
+        font-size: 10px;
         /* 14px */
 
     }
@@ -483,12 +486,12 @@
 
     #form {
         margin: 0 auto;
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
         border: 1px solid rgba(255, 255, 255, 0.842);
         border-radius: 5px;
-        padding-top: 20px;
-        padding-left: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
     }
 
     .field {
@@ -539,14 +542,14 @@
 
 
     #footer .bottom .logo {
-        font-size: 25px;
+        font-size: 22px;
         /* 30px */
         float: left;
         font-weight: 900;
     }
 
     #footer .bottom .link {
-        font-size: 14px;
+        font-size: 10px;
         /* 18px */
         float: right;
     }

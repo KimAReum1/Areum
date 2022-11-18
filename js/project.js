@@ -24,7 +24,7 @@ $(document).ready(function () {
     function timer() {
         setIntervalId = setInterval(function () {
             var n = current + 1;
-            if (n == 4) {
+            if (n == 5) {
 
                 n = 0;
             };
