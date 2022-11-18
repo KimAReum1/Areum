@@ -154,7 +154,7 @@
 
 
 
-    /* -------------------------스킬영역------------------------------ */
+    /* -------------------------모바일 스킬영역------------------------------ */
 
     #skill {
         display: none;
@@ -184,18 +184,18 @@
     #skill_m .skill_list {
         display: flex;
         justify-content: space-between;
-        width: 100px;
+        width: 120px;
         /* 300px */
         height: 100px;
         /* 320px */
     }
 
     #skill_m .skill_list li {
-
         width: 16px;
         /* 50px */
         height: 100px;
         /* 320px */
+        position: relative;
 
     }
 
@@ -205,7 +205,7 @@
         /* 50px */
         height: 100px;
         /* 300px */
-        border: 2px solid #000;
+        border: 1px solid #000;
         overflow: hidden;
     }
 
@@ -213,14 +213,24 @@
         position: absolute;
         bottom: 0px;
         left: 0;
-        font-size: 0.2vw;
-        /* 16px */
+        /* font-size: 16px; */
         text-align: center;
         opacity: 1;
+
     }
 
+
+    #skill_m .skill_list li .in_box span {
+        position: absolute;
+        left: 0px;
+        font-size: 10px;
+
+    }
+
+
+
     #skill_m .skill_list li .in_box01 {
-        width: 50px;
+        width: 100%;
         height: 80px;
         /* 240px */
         background-color: rgb(178, 130, 223);
@@ -228,7 +238,7 @@
     }
 
     #skill_m .skill_list li .in_box02 {
-        width: 50px;
+        width: 100%;
         height: 70px;
         /* 210px */
         background-color: rgb(178, 130, 223);
@@ -236,7 +246,7 @@
 
 
     #skill_m .skill_list li .in_box03 {
-        width: 50px;
+        width: 100%;
         height: 30px;
         /* 90px */
         background-color: rgb(178, 130, 223);
@@ -244,7 +254,7 @@
     }
 
     #skill_m .skill_list li .in_box04 {
-        width: 50px;
+        width: 100%;
         height: 40px;
         /* 120px */
         background-color: rgb(178, 130, 223);
@@ -252,9 +262,25 @@
     }
 
     #skill_m .skill_list li h5 {
-        text-align: center;
+        /* text-align: center; */
         font-size: 0.1vw;
         /* 14px */
+
+    }
+
+    #skill_m .skill_list li:nth-child(1) h5 {
+        position: absolute;
+        left: -2px;
+    }
+
+    #skill_m .skill_list li:nth-child(3) h5 {
+        position: absolute;
+        left: -10px;
+    }
+
+    #skill_m .skill_list li:nth-child(4) h5 {
+        position: absolute;
+        left: -5px;
     }
 
     .license_m {
@@ -273,7 +299,7 @@
     .license_m li {
         list-style: circle;
         font-weight: 700;
-        font-size: 0.2vw;
+        font-size: 10px;
         /* 20px */
         margin-bottom: 20px;
         border-bottom: 1px solid #888;
@@ -291,4 +317,198 @@
         /* 25px */
     }
 
+
+
+
+    /* ----------------------모바일 프로젝트 영역-------------------- */
+
+    #project {
+        /* display: flex;
+        justify-content: space-around;
+        align-items: center; */
+        width: 100%;
+        height: 500px;
+
+    }
+
+    #project_in {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    #project_in .web_mn {
+        position: relative;
+        width: 400px;
+        /* 1000px */
+        height: 200px;
+        /* 500px */
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+    }
+
+    #project_in img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        /* 1000px */
+        height: 200px;
+        /* 500px */
+    }
+
+    #project_in img:nth-child(1) {
+        z-index: 5;
+    }
+
+    #project_in img:nth-child(2) {
+        z-index: 4;
+    }
+
+    #project_in img:nth-child(3) {
+        z-index: 3;
+    }
+
+    #project_in img:nth-child(4) {
+        z-index: 2;
+    }
+
+    #project_in img:nth-child(5) {
+        z-index: 1;
+    }
+
+
+    #project_in ul {
+        /* margin-left: 50px; */
+        width: 400px;
+        /* 500px */
+        height: 200px;
+        /* 500px */
+        background-color: rgba(255, 255, 255, 0.932);
+        border-radius: 5px;
+        outline: 1px dotted #ccc;
+        outline-offset: -10px;
+    }
+
+    #project_in li {
+        /* padding: 15px; */
+        font-size: 10px;
+        /* 20px */
+        font-family: 'Poor Story', cursive;
+        line-height: 10px;
+        /* 30px */
+    }
+
+    #project_in li:nth-child(1) {
+        text-align: center;
+    }
+
+    #project_in li span {
+
+        font-size: 12px;
+        /* 25px */
+        font-weight: 700;
+        font-family: 'Poor Story', cursive;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* ----------------------모바일 하단 영역-------------------- */
+    #footer {
+        /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+        width: 100%;
+        /* height: 800px; */
+    }
+
+    #footer_in {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        /* height: 700px; */
+        border-bottom: 1px solid rgb(163, 161, 161);
+
+    }
+
+    #form {
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        border: 1px solid rgba(255, 255, 255, 0.842);
+        border-radius: 5px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .field {
+        margin-bottom: 10px;
+    }
+
+    .field label {
+        display: block;
+        font-size: 12px;
+        color: #777;
+    }
+
+    .field input {
+        display: block;
+        min-width: 250px;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        display: block;
+        padding: 6px 30px;
+        font-size: 14px;
+        background-color: #4460AA;
+        color: #fff;
+        border: none
+    }
+
+    #footer h2 {
+        /* margin-left: 200px;
+        margin-top: 210px; */
+        text-align: center;
+        font-size: 30px;
+        /* 50px */
+        text-shadow: 5px 5px rgba(114, 112, 112, 0.274);
+
+    }
+
+    #footer .bottom {
+        margin: 0 auto;
+        /* margin-top: 40px; */
+        width: 100%;
+        /* 1000px */
+        height: 50px;
+    }
+
+
+    #footer .bottom .logo {
+        font-size: 25px;
+        /* 30px */
+        float: left;
+        font-weight: 900;
+    }
+
+    #footer .bottom .link {
+        font-size: 14px;
+        /* 18px */
+        float: right;
+    }
 }
