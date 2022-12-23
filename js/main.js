@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 
     const menu = $('#header #nav li');
-    const menu_x = $('.fixnav .fix_mn li  ');
+    const menu_x = $('.fixnav .fix_mn li');
     const contents = $('#wrap > section');
 
 
@@ -25,6 +25,10 @@ $(document).ready(function () {
         let tg = section.offset().top;
 
         $('html, body').stop().animate({ scrollTop: tg });
+
+        console.log(i)
+        console.log(section)
+
     });
 
     menu_x.click(function (e) {

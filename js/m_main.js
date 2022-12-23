@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
     const menu = $('#header #nav li');
-    const menu_x = $('.m_fixnav .m_fix_mn li  ');
+    // const menu_x = $('.m_fixnav .m_fix_mn li  ');
     const contents = $('#wrap .mobile');
 
 
@@ -17,14 +17,14 @@ $(document).ready(function () {
         $('html, body').stop().animate({ scrollTop: tg });
     });
 
-    menu_x.click(function (e) {
-        e.preventDefault();
-        i = $(this).index();
-        section = $(contents).eq(i);
+    // menu_x.click(function (e) {
+    //     e.preventDefault();
+    //     i = $(this).index();
+    //     section = $(contents).eq(i);
 
-        tg = section.offset().top;
+    //     tg = section.offset().top;
 
-        $('html, body').stop().animate({ scrollTop: tg });
-    });
+    //     $('html, body').stop().animate({ scrollTop: tg });
+    // });
 
 });

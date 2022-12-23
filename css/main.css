@@ -2,16 +2,16 @@
     width: 100%;
     background: -webkit-linear-gradient(-45deg,
             rgb(194, 243, 208)20%, rgb(255, 234, 253)40%,
-            rgb(194, 197, 243)80%);
+            rgb(249, 249, 238)80%);
     background: -ms-linear-gradient(-45deg,
             rgb(194, 243, 208)20%, rgb(255, 234, 253)40%,
-            rgb(194, 197, 243)80%);
+            rgb(249, 249, 238)80%);
     background: -moz-linear-gradient(-45deg,
             rgb(194, 243, 208)20%, rgb(255, 234, 253)40%,
-            rgb(194, 197, 243)80%);
+            rgb(249, 249, 238)80%);
     background: -o-linear-gradient(-45deg,
             rgb(194, 243, 208)20%, rgb(255, 234, 253)40%,
-            rgb(194, 197, 243)80%);
+            rgb(249, 249, 238)80%);
 }
 
 
@@ -128,40 +128,51 @@
     float: left;
     width: 450px;
     height: 350px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(249, 253, 246, 0.827);
     opacity: 0;
     position: absolute;
     top: 50px;
-    left: 50px;
+    left: 300px;
+    /* 50px */
     padding: 20px;
     box-sizing: border-box;
     border-radius: 5px;
 }
+#introduce .box1 span{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poor Story', cursive;
 
+}
 #introduce .box1 p {
     color: #000;
     font-size: 18px;
-    line-height: 50px;
+    line-height: 40px;
     font-family: 'Poor Story', cursive;
+    margin-bottom:20px;
 }
 
 #introduce .box2 {
     float: right;
-    width: 620px;
+    width: 350px;
+    height: 350px;
     /* background-color: rgb(165, 146, 33); */
     opacity: 0;
     position: absolute;
-    top: 15px;
-    left: 1400px;
+    top: 50px;
+    left: 1300px;
+    /* 1400px */
     border-radius: 5px;
-    outline: 1px solid rgba(255, 255, 255, 0.658);
-    outline-offset: -10px;
-    overflow: hidden;
+    /* outline: 1px solid rgba(255, 255, 255, 0.658);
+    outline-offset: -10px; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 #introduce .box2 img {
-    display: block;
     width: 100%;
     height: auto;
 
@@ -198,9 +209,9 @@
 
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 900px;
+    width: 70%;
     height: 500px;
     border: 2px solid #fff;
     border-radius: 5px;
@@ -209,7 +220,7 @@
 #skill .skill_list {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 23%;
     height: 320px;
 }
 
@@ -232,9 +243,10 @@
     position: absolute;
     bottom: 0px;
     left: 0;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     opacity: 0;
+    color: #000;
 }
 
 #skill .skill_list li .in_box01 {
@@ -271,19 +283,24 @@
 }
 
 .license {
-    margin-left: 100px;
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: 400px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .license ul {
-    width: 100%;
+    width: 50%;
+    height: 200px;
 }
 
 .license li {
     list-style: circle;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     border-bottom: 1px solid #888;
     font-family: 'Poor Story', cursive;
@@ -296,6 +313,40 @@
     margin-bottom: 50px;
     color: #000;
     font-size: 25px;
+}
+
+.site{
+    width: 30%;
+    height: 200px;
+    line-height: 30px;
+    text-align: center;
+}
+.site b{
+    font-size: 25px;
+    font-family: 'Poor Story', cursive;
+    color: #000;
+    
+}
+.site ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+}
+
+.site li{
+    text-align: left;
+}
+
+.site p{
+    font-family: 'Poor Story', cursive;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.site a{
+    font-size: 16px;
 }
 
 
@@ -357,36 +408,116 @@
     z-index: 1;
 }
 
-
-#project_in ul {
+/* ----------------------프로젝트 탭메뉴--------------------- */
+#project_in .tabMn {
     margin-left: 50px;
     width: 500px;
     height: 500px;
+    position: relative;
+
+
+}
+
+#project_in .tab_ttl{
+    display: flex;
+    
+    width: 100%;
+    height: 30px;
+}
+
+#project_in .tab_ttl li{
+    width: 50%;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Poor Story', cursive;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+#project_in .tab_ttl li:hover{
+    background-color: #ccc;
+    color: #fff;
+
+}
+
+#project_in .con{
+    width: 500px;
+    height: 470px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+
+#project_in .con1 ul {
+    /* margin-left: 50px; */
+    width: 500px;
+    height: 470px;
     background-color: rgba(255, 255, 255, 0.932);
     border-radius: 5px;
     outline: 1px dotted #ccc;
     outline-offset: -10px;
+    z-index: 500;
 }
 
-#project_in li {
+#project_in .con1 li {
     padding: 15px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Poor Story', cursive;
-    line-height: 30px;
+    line-height: 25px;
 }
 
-#project_in li:nth-child(1) {
+#project_in .con1 li:nth-child(1) {
     text-align: center;
 }
 
-#project_in li span {
+#project_in .con1 li span {
 
     font-size: 25px;
     font-weight: 700;
     font-family: 'Poor Story', cursive;
 }
 
+#project_in .con1 li a{
+    font-size: 14px;
+}
 
+
+
+
+
+
+
+#project_in .con2 ul{
+    width: 500px;
+        height: 470px;
+        background-color: rgba(255, 255, 255, 0.932);
+        border-radius: 5px;
+        outline: 1px dotted #ccc;
+        outline-offset: -10px;
+    z-index: 400;
+}
+
+#project_in .con2 li {
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Poor Story', cursive;
+    line-height: 25px;
+}
+
+#project_in .con2 li:nth-child(1) {
+    text-align: center;
+}
+
+#project_in .con2 li span {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poor Story', cursive;
+}
 
 
 

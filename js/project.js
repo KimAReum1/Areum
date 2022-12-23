@@ -48,4 +48,25 @@ $(document).ready(function () {
     };
 
 
+
+
+    // 탭메뉴
+            $('.con').hide();
+            $('.con').eq(0).show();
+
+            $('.tabMn li').click(function () {
+                let i = $(this).index();
+                //console.log(i)
+                //$('.con').hide();
+                $('.con').each(function () {
+                    if ($(this).show()) {
+                        $(this).hide(); 
+                    }
+                });
+
+                $('.con').eq(i).show();
+            });
+        
+
+
 });

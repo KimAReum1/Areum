@@ -25,7 +25,7 @@
     }
 
     #header #nav {
-        display: none;
+        display: block;
         line-height: 100px;
         width: 100%;
         /* 650px */
@@ -97,7 +97,7 @@
 
     /* -----------------모바일 고정 네비--------------- */
     .m_fixnav {
-        display: block;
+        display: none;
         position: fixed;
         top: 20px;
         right: 10px;
@@ -156,31 +156,41 @@
 
     #introduce_m .box1_m {
         width: 100%;
-        height: 100px;
+        height: 200px;
         background-color: #fff;
         padding: 10px;
         box-sizing: border-box;
         border-radius: 5px;
+        text-align: center;
+    }
+
+    #introduce_m .box1_m span{
+        font-size: 3vw;
+        font-family: 'Poor Story', cursive;
+        font-weight: 700;
+
     }
 
     #introduce_m .box1_m p {
         font-size: 3vw;
         font-family: 'Poor Story', cursive;
         /* 22px */
+        margin-bottom: 10px;
     }
 
     #introduce_m .box2_m {
         width: 100%;
         margin-top: 20px;
         border-radius: 5px;
-        outline: 1px solid rgba(255, 255, 255, 0.658);
+        /* outline: 1px solid rgba(255, 255, 255, 0.658);
         outline-offset: -10px;
-        overflow: hidden;
+        overflow: hidden; */
 
     }
 
     #introduce_m .box2_m img {
-        width: 100%;
+        margin: 0 auto;
+        width: 50%;
         display: block;
     }
 
@@ -418,12 +428,21 @@
     }
 
 
-    #project_in ul {
+    /* ----------------------프로젝트 탭메뉴------------------------- */
+
+    #project_in .tabMn{
+        margin-left: 0px;
+        width: 300px;
+        height: 200px;
+
+    }
+
+    #project_in .con1 ul {
         margin-left: 0px;
         /* 50px */
         width: 300px;
         /* 500px */
-        height: 150px;
+        height: 200px;
         /* 500px */
         background-color: rgba(255, 255, 255, 0.932);
         border-radius: 5px;
@@ -433,29 +452,64 @@
         box-sizing: border-box;
     }
 
-    #project_in li {
+    #project_in .con1 li {
         padding: 0px;
         /* 15px */
         font-size: 10px;
         /* 20px */
         font-family: 'Poor Story', cursive;
-        line-height: 13px;
+        line-height: 15px;
         /* 30px */
     }
 
-    #project_in li:nth-child(1) {
+    #project_in .con1 li:nth-child(1) {
         text-align: center;
+        margin-bottom: 10px;
     }
 
-    #project_in li span {
-
+    #project_in .con1 li span {
         font-size: 12px;
         /* 25px */
         font-weight: 700;
         font-family: 'Poor Story', cursive;
     }
+    #project_in .con1 li a{
+        font-size: 10px;
+    }
 
-
+        #project_in .con2 ul {
+            width: 300px;
+                /* 500px */
+                height: 200px;
+                /* 500px */
+                background-color: rgba(255, 255, 255, 0.932);
+                border-radius: 5px;
+                outline: 1px dotted #ccc;
+                outline-offset: -10px;
+                padding: 12px;
+                box-sizing: border-box;
+        }
+    
+        #project_in .con2 li {
+            padding: 0px;
+                /* 15px */
+                font-size: 10px;
+                /* 20px */
+                font-family: 'Poor Story', cursive;
+                line-height: 15px;
+                /* 30px */
+        }
+    
+        #project_in .con2 li:nth-child(1) {
+            text-align: center;
+        }
+    
+        #project_in .con2 li span {
+            font-size: 12px;
+                /* 25px */
+                font-weight: 700;
+                font-family: 'Poor Story', cursive;
+        }
 
 
 
