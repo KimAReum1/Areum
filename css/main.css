@@ -126,7 +126,7 @@
 
 #introduce .box1 {
     float: left;
-    width: 450px;
+    width: 400px;
     height: 350px;
     background-color: rgba(249, 253, 246, 0.827);
     opacity: 0;
@@ -137,19 +137,22 @@
     padding: 20px;
     box-sizing: border-box;
     border-radius: 5px;
+    text-align: center;
 }
-#introduce .box1 span{
+
+#introduce .box1 span {
     font-size: 20px;
     font-weight: 700;
     font-family: 'Poor Story', cursive;
 
 }
+
 #introduce .box1 p {
     color: #000;
     font-size: 18px;
     line-height: 40px;
     font-family: 'Poor Story', cursive;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 #introduce .box2 {
@@ -165,7 +168,7 @@
     border-radius: 5px;
     /* outline: 1px solid rgba(255, 255, 255, 0.658);
     outline-offset: -10px; */
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,39 +318,40 @@
     font-size: 25px;
 }
 
-.site{
+
+.experience{
     width: 30%;
-    height: 200px;
-    line-height: 30px;
-    text-align: center;
-}
-.site b{
-    font-size: 25px;
-    font-family: 'Poor Story', cursive;
-    color: #000;
-    
-}
-.site ul{
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.experience ul{
     width: 100%;
-    height: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+
 }
 
-.site li{
-    text-align: left;
-}
-
-.site p{
-    font-family: 'Poor Story', cursive;
+.experience li{
     font-size: 18px;
-    font-weight: 700;
+    font-family: 'Poor Story', cursive;
+    font-weight: 600;
+}
 
+.experience li span{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Poor Story', cursive;
+    color: #000;
 }
-.site a{
-    font-size: 16px;
-}
+
 
 
 
@@ -418,14 +422,14 @@
 
 }
 
-#project_in .tab_ttl{
+#project_in .tab_ttl {
     display: flex;
-    
+
     width: 100%;
     height: 30px;
 }
 
-#project_in .tab_ttl li{
+#project_in .tab_ttl li {
     width: 50%;
     height: 30px;
     background-color: #fff;
@@ -435,16 +439,17 @@
     font-family: 'Poor Story', cursive;
     font-weight: 700;
     cursor: pointer;
-    
+    border-radius: 10px 10px 0 0;
+
 }
 
-#project_in .tab_ttl li:hover{
+#project_in .tab_ttl li:hover {
     background-color: #ccc;
     color: #fff;
 
 }
 
-#project_in .con{
+#project_in .con {
     width: 500px;
     height: 470px;
     position: absolute;
@@ -468,7 +473,7 @@
     padding: 15px;
     font-size: 18px;
     font-family: 'Poor Story', cursive;
-    line-height: 25px;
+    line-height: 23px;
 }
 
 #project_in .con1 li:nth-child(1) {
@@ -482,38 +487,87 @@
     font-family: 'Poor Story', cursive;
 }
 
-#project_in .con1 li a{
+#project_in .con1 li a {
     font-size: 14px;
 }
 
 
 
 
-
-
-
-#project_in .con2 ul{
+#project_in .con2 ul {
     width: 500px;
-        height: 470px;
-        background-color: rgba(255, 255, 255, 0.932);
-        border-radius: 5px;
-        outline: 1px dotted #ccc;
-        outline-offset: -10px;
+    height: 470px;
+    line-height: 30px;
+    text-align: center;
     z-index: 400;
+    background-color: rgba(255, 255, 255, 0.932);
+    outline: 1px dotted #ccc;
+    outline-offset: -10px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
 }
 
+#project_in .con2 b {
+    font-size: 25px;
+    font-family: 'Poor Story', cursive;
+    color: #000;
+
+}
+
+
+
 #project_in .con2 li {
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    width: 480px;
+    height: 115px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#project_in .con2 p {
+    font-family: 'Poor Story', cursive;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+#project_in .con2 a {
+    font-size: 16px;
+}
+
+
+
+
+#project_in .con3 ul {
+    width: 500px;
+    height: 470px;
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 5px;
+    outline: 1px dotted #ccc;
+    outline-offset: -10px;
+    z-index: 300;
+}
+
+#project_in .con3 li {
     padding: 15px;
     font-size: 18px;
     font-family: 'Poor Story', cursive;
     line-height: 25px;
 }
 
-#project_in .con2 li:nth-child(1) {
+#project_in .con3 li:nth-child(1) {
     text-align: center;
 }
 
-#project_in .con2 li span {
+#project_in .con3 li span {
     font-size: 25px;
     font-weight: 700;
     font-family: 'Poor Story', cursive;
