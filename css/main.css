@@ -467,7 +467,11 @@
 
 .license ul {
     width: 100%;
-    height: 180px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .license li {
@@ -482,7 +486,7 @@
     list-style: none;
     border-bottom: none;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #000;
     font-size: 30px;
 }
@@ -491,16 +495,29 @@
     background-color: rgb(217, 246, 213);
 }
 
-.license li a {
-    /* display: block; */
+.license .blog {
+    width: 100%;
 }
 
-.license li a img {
-    display: block;
-    /* width: 50px; */
-    /* border-radius: 10px; */
+.license .blog a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.license .blog a img {
+    width: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.license .blog a p {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Jua', sans-serif;
+    color: blue;
+}
 
 /* -----------------------프로젝트영역--------------------------- */
 
@@ -604,6 +621,10 @@
     border: 1px solid #ccc;
 }
 
+#project_in .con a:hover {
+    color: blue;
+}
+
 
 #project_in .con1 ul {
     /* margin-left: 50px; */
@@ -620,7 +641,7 @@
     padding: 15px;
     font-size: 18px;
     font-family: 'Jua', sans-serif;
-    line-height: 23px;
+    line-height: 20px;
 }
 
 #project_in .con1 li:nth-child(1) {
@@ -874,39 +895,58 @@
 }
 
 #form {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border: 1px solid rgba(255, 255, 255, 0.842);
     border-radius: 5px;
     padding-top: 20px;
     padding-left: 20px;
 }
 
+#form .img {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form img {
+    width: 80px;
+
+}
+
 .field {
+    height: 70px;
     margin-bottom: 10px;
 }
 
 .field label {
     display: block;
-    font-size: 12px;
+    font-size: 18px;
     color: #777;
 }
 
 .field input {
     display: block;
-    min-width: 250px;
+    min-width: 470px;
+    height: 40px;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 input[type="submit"] {
     display: block;
     padding: 6px 30px;
     font-size: 14px;
-    background-color: #4460AA;
-    color: #fff;
+    background-color: #44aa50;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
     border: none
 }
+
+
+
 
 #footer h2 {
     text-align: center;
