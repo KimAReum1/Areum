@@ -3,6 +3,8 @@ $(document).ready(function () {
     var current = 0;
     var setIntervalId;
 
+
+
     // $('.btn button').click(function (e) {
     //     e.preventDefault();
     //     var i = $(this).index();
@@ -24,7 +26,7 @@ $(document).ready(function () {
     function timer() {
         setIntervalId = setInterval(function () {
             var n = current + 1;
-            if (n == 5) {
+            if (n == 4) {
 
                 n = 0;
             };
@@ -51,22 +53,22 @@ $(document).ready(function () {
 
 
     // 탭메뉴
-            $('.con').hide();
-            $('.con').eq(0).show();
+    $('.con').hide();
+    $('.con').eq(0).show();
 
-            $('.tabMn li').click(function () {
-                let i = $(this).index();
-                //console.log(i)
-                //$('.con').hide();
-                $('.con').each(function () {
-                    if ($(this).show()) {
-                        $(this).hide(); 
-                    }
-                });
+    $('.tabMn li').click(function () {
+        let i = $(this).index();
+        //console.log(i)
+        //$('.con').hide();
+        $('.con').each(function () {
+            if ($(this).show()) {
+                $(this).hide();
+            }
+        });
 
-                $('.con').eq(i).show();
-            });
-        
+        $('.con').eq(i).show();
+    });
+
 
 
 });
