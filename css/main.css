@@ -474,6 +474,10 @@
     align-items: center;
 }
 
+.license ul:first-child {
+    height: 150px;
+}
+
 .license li {
     font-weight: 700;
     font-size: 18px;
@@ -495,28 +499,40 @@
     background-color: rgb(217, 246, 213);
 }
 
+
 .license .blog {
     width: 100%;
 }
 
-.license .blog a {
+.license a {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.license .blog a img {
+.license .korea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.license .korea img {
+    width: 60px;
+}
+
+.license a img {
     width: 50px;
     border-radius: 10px;
     margin-right: 10px;
 }
 
-.license .blog a p {
-    font-weight: 500;
+.license a p {
+    font-weight: 700;
     font-size: 18px;
     font-family: 'Jua', sans-serif;
-    color: blue;
+
 }
 
 /* -----------------------프로젝트영역--------------------------- */
