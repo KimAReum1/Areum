@@ -426,6 +426,7 @@
 
 .experience li img {
     width: 100px;
+    cursor: pointer;
 
 }
 
@@ -450,6 +451,19 @@
 .experience li img:nth-child(9) {
     width: 80px;
 
+}
+
+
+
+.experience .text {
+    width: 90%;
+    height: 80px;
+}
+
+.experience .text li {
+    font-size: 22px;
+    /* opacity: 0;
+    transition: all 0.5s; */
 }
 
 

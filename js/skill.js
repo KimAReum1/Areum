@@ -20,4 +20,39 @@ $(document).ready(function () {
             $('#skill .in_box05').stop().css({ top: '180px', opacity: '1' }).animate({ top: '300px' }, 1000);
         }
     });
+
+
+
+
+
+    // 도움말 창 띄우기
+
+
+    const icon = $('.experience .imgbox img');
+    const texts = $('.experience .text li');
+
+
+    texts.hide();
+
+    icon.mouseenter(function () {
+        let i = $(this).index();
+
+        texts.each(function () {
+            if ($(this).show()) {
+                $(this).hide();
+            }
+        });
+
+        // let pox = $('.imgbox').offset().left;
+        // let poy = $('.imgbox').offset().top;
+        // texts.css({ top: poy + '30px', left: pox + 'px' }).fadeIn(500);
+
+        texts.eq(i).fadeIn('slow').show();
+    });
+
+    icon.mouseleave(function () {
+        texts.hide();
+    })
+
+
 });
