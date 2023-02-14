@@ -29,10 +29,13 @@ $(document).ready(function () {
 
 
     const icon = $('.experience .imgbox img');
+    const p = $('.experience .text p').hide();
     const texts = $('.experience .text li');
 
 
     texts.hide();
+    p.show();
+
 
     icon.mouseenter(function () {
         let i = $(this).index();
@@ -40,18 +43,19 @@ $(document).ready(function () {
         texts.each(function () {
             if ($(this).show()) {
                 $(this).hide();
+                p.hide();
+
             }
         });
 
-        // let pox = $('.imgbox').offset().left;
-        // let poy = $('.imgbox').offset().top;
-        // texts.css({ top: poy + '30px', left: pox + 'px' }).fadeIn(500);
 
         texts.eq(i).fadeIn('slow').show();
+
     });
 
     icon.mouseleave(function () {
         texts.hide();
+        p.show();
     })
 
 

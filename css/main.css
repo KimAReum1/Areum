@@ -458,10 +458,17 @@
 .experience .text {
     width: 90%;
     height: 80px;
+    background-color: rgb(243, 243, 188);
+}
+
+.experience .text p {
+    font-size: 18px;
+    font-family: 'Jua', sans-serif;
 }
 
 .experience .text li {
-    font-size: 22px;
+    font-size: 18px;
+    font-family: 'Jua', sans-serif;
     /* opacity: 0;
     transition: all 0.5s; */
 }
